@@ -13,6 +13,6 @@ spec:
     targetPort: 3306
   selector:
     app: mysql
-  type: ClusterIP
+  clusterIP: None
 status:
   loadBalancer: {}
