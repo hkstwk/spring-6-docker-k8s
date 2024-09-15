@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: mongo
-  name: mongo
+    app: reactive-mongo
+  name: reactive-mongo
 spec:
   ports:
-  - name: 27017-27017
-    port: 27017
+  - name: 8080-8080
+    port: 8080
     protocol: TCP
-    targetPort: 27017
+    targetPort: 8080
   selector:
-    app: mongo
-  clusterIP: None
+    app: reactive-mongo
+  type: ClusterIP
 status:
   loadBalancer: {}
