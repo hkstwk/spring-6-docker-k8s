@@ -22,6 +22,8 @@ spec:
         name: spring-6-gateway
         resources: {}
         env:
-          - name: SPRING_ACTIVE_PROFILES
+          - name: SPRING_PROFILES_ACTIVE
             value: docker
+          - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI
+            value: http://auth-server:9000
 status: {}
